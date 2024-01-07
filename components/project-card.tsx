@@ -49,7 +49,7 @@ export default function ProjectCard({
           src={imageUrl}
           alt="Porjects I've worked on"
           quality={95}
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:-rotate-2 group-hover:scale-[1.04] transition 
+          className="absolute top-8 -right-40 w-[28.25rem] h-full rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:-rotate-2 group-hover:scale-[1.04] transition 
         group-even:group-hover:translate-x-2 group-even:group-hover:-translate-y-2 group-even:group-hover:rotate-2 
         hidden sm:block
         "

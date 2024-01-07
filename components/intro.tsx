@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { personalInfo } from "@/lib/data";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -30,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1610741257169-8b918a80e97b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+              src={personalInfo?.image_url}
               alt="Portrait"
               width="192"
               height="192"
@@ -56,18 +57,28 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 text-2xl font-medium !leading-[1.5] sm:text-4xl flex flex-col"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Arthur. </span>I'm a{" "}
-        <span className="font-bold">Front-end developer </span>
-        <span>with </span>
-        <span className="font-bold">a year </span>
-        <span>of experience. I enjoy building </span>
-        <span className="italic">site & apps </span>
-        <span>My focus is </span>
-        <span className="underline">React JS & Next JS</span>
+        <span className="font-bold w-full">
+          Hello, I'm {personalInfo?.name}.{" "}
+        </span>
+        <span>
+          I'm a <span className="font-bold">{personalInfo?.role} </span>
+        </span>
+        <span>
+          with <span className="font-bold">{personalInfo?.experience} </span> of
+          experience.
+        </span>
+        <span>
+          {" "}
+          I enjoy building <span className="italic">site & apps </span>
+        </span>
+
+        <span>
+          My focus is <span className="underline">React JS & Next JS</span>
+        </span>
       </motion.h1>
 
       <motion.div
@@ -99,14 +110,22 @@ export default function Intro() {
         <div className="flex gap-2">
           <a
             className="bg-white p-4 flex items-center justify-center rounded-full text-gray-700 border borderBlack outline-none focus:scale-110 hover:scale-110 active:scale-[1.03] transition hover:bg-gray-50 hover:shadow-sm  cursor-pointer dark:bg-white/10 dark:text-white/60"
-            href="https://linkedin.com"
+            href={
+              personalInfo?.linkedin_link
+                ? personalInfo?.linkedin_link
+                : "https://linkedin.com"
+            }
             target="_blank"
           >
             <FaLinkedinIn className="text-lg" />
           </a>
           <a
             className="bg-white p-4 flex items-center justify-center rounded-full text-gray-700 border borderBlack outline-none focus:scale-110 hover:scale-110 active:scale-[1.03] transition hover:bg-gray-50 hover:shadow-sm cursor-pointer dark:bg-white/10 dark:text-white/60"
-            href="https://github.com"
+            href={
+              personalInfo?.github_link
+                ? personalInfo?.github_link
+                : "https://github.com"
+            }
             target="_blank"
           >
             <FaGithub className="text-lg" />
