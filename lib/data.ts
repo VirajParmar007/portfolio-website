@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "Bachelor of Engineering (Civil)",
     location: "Mumbai, India",
     description:
-      "I graduated after 4 years of studying civil engineering from St. John Sollege of Engineering and Management (Palghar) a NAAC A Accredited",
+      "I graduated after completing a four-year course in civil engineering from St. John College of Engineering and Management in Palghar. The institution holds a prestigious NAAC A Accreditation.",
     icon: React.createElement(LuGraduationCap),
     date: "2015 - 2019",
   },
@@ -57,15 +57,15 @@ export const experiencesData = [
     title: "Civil Engineer",
     location: "MS./ Surya Engineering and Construction. Mumbai, India",
     description:
-      "Worked on an MCGM project, Proposed Demolition & Reconstruction of Cama Road Municipal School, Andheri West. A new construction of G+7 School Building where role was to plan the construction beforehand to ensure smooth flow of work. Oversee the construction work being done in the phases set earlier by us and to ensure the quality of the work. Managing the team of workers to utilize the time in an efficient manner. Maintaining & updating daily records of the work, preparing the bill on monthly basis.",
+      "I was actively involved in a significant project with the Municipal Corporation of Greater Mumbai (MCGM), Proposed Demolition & Reconstruction of Cama Road Municipal School, Andheri West. A new construction of G+7 School Building where my responsibilities encompassed the planning of construction beforehand to ensure smooth flow of work. Oversee the construction work being done in the phases set earlier by us and to ensure the quality of the work. Managing the team of workers to utilize the time in an efficient manner. Maintaining & updating daily records of the work, preparing the bill on monthly basis.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2022",
   },
   {
-    title: "Front-End Developer",
+    title: "Web Developer",
     location: "Millicent Technlogies. Mumbai, India",
     description:
-      "I am working as a front-end developer for 1+ years in Millicent technologies. Working on multiple projects as a team lead.",
+      "I have been working as a fullstack developer at Millicent Technologies for over a year, where my role extends beyond development to include leadership responsibilities within a team. As a team lead, I am actively involved in managing multiple projects, overseeing the development process, and ensuring timely project delivery. My responsibilities also encompass project estimation, where I play a pivotal role in assessing project scope, timelines, and resource requirements. This involves collaborating closely with team members to establish realistic goals and milestones. I am committed to maintaining a high standard of project management, ensuring that the team works efficiently and meets the deadlines as estimated.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
@@ -81,6 +81,20 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "PennyPal trading App",
+    description:
+      "PennyPal is user friendly investment & trading application designed to empower your financial journey.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "TradingView",
+      "Redux",
+      "Socket.io",
+    ],
+    imageUrl: pennyPal,
+  },
+  {
     title: "Eastatetool 5.0 Marketing",
     description:
       "I am working as a front end developer on this project for 1 years. It is a real estate marketing project.",
@@ -89,19 +103,13 @@ export const projectsData = [
       "JavaScript",
       "Axios",
       "Bootstrap",
-      "zustand",
+      "Zustand",
       "React query",
       "React hook form",
     ],
     imageUrl: estatetool,
   },
-  {
-    title: "PennyPal",
-    description:
-      "PennyPal is an Indian stock broker app developed in React JS and Typescript",
-    tags: ["React", "TypeScript", "Tailwind", "Redux", "Socket.io"],
-    imageUrl: pennyPal,
-  },
+
   // {
   //   title: "Word Analytics",
   //   description:
@@ -125,6 +133,7 @@ export const skillsData = [
   "Material UI",
   "Redux",
   "Framer Motion",
+  "TradingView's charting library",
   "MongoDB",
   "Socket.io",
 ] as const;

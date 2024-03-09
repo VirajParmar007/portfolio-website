@@ -26,9 +26,7 @@ export default function About() {
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I love the feeling of finally figuring out a
         solution to a problem. My core stack is{" "}
-        <span className="font-medium">JavaScript, React, Next.js</span>. I am
-        also familiar with TypeScript and I am always looking to learn new
-        technologies.
+        <span className="font-medium">React JS, Next.js</span>.
       </p>
 
       <p className="mb-8">
@@ -42,7 +40,9 @@ export default function About() {
         .
       </p>
       <p>
-        <span className="text-3xl font-semibold mb-8 text-center">"People say do what you love but I belive in loving what you do"</span>
+        <span className="text-3xl font-semibold mb-8 text-center">
+          "People say do what you love but I belive in loving what you do"
+        </span>
       </p>
     </motion.section>
   );
